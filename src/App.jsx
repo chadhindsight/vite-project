@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +23,7 @@ function decrease() {
         <button className='text-xl' onClick={()=> increase()}>Increase</button>
         <button className='text-xl' onClick={()=> decrease()}>Decrease</button>
         <p className='text-3xl font-bold underline'>Currrent count: {count}</p>
-
+      <Footer/>
     </>
   )
 }
